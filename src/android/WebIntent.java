@@ -183,6 +183,8 @@ public class WebIntent extends CordovaPlugin {
                 i.setType(type);
             }
         }
+
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         
         for (String key : extras.keySet()) {
             String value = extras.get(key);
